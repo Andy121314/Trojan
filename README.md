@@ -1,21 +1,18 @@
-Trojan 一键安装脚本
+一键脚本代码
+此脚本感谢  atrandys
 
-====================================
+Github 项目地址：点击访问
 
-Trojan 一键安装自动脚本
+波仔在 atrandys 的基础之上，合成了 4 IN 1 的一个 BBRPLUS 加速脚本，方便大家使用
 
-系统：centos7+/debian9+/ubuntu16.04+
+安装好 curl，若是有此环境，请跳过
 
-网站：www.v2rayssr.com （已开启禁止国内访问）
+apt-get update -y && apt-get install curl -y    ##Ubuntu/Debian 系统安装 Curl 方法
+yum update -y && yum install curl -y            ##Centos 系统安装 Curl 方法
+有些 VPS 需要安装 XZ 压缩工具
 
-脚本东拼西凑 需要感谢 秋水逸冰、Atrandys、V2ray官方等
+apt-get install xz-utils   #Debian/Ubuntu 安装 XZ 压缩工具命令
+yum install xz    #CentOS 安装 XZ 压缩工具
+Trojan 一键脚本代码：
 
-Youtube：波仔分享
-
-====================================
-
-脚本安装命令
-
-curl -O https://raw.githubusercontent.com/V2RaySSR/Trojan/master/Trojan.sh && chmod  x trojan.sh && ./trojan.sh
-
-wget --no-check-certificate https://raw.githubusercontent.com/V2RaySSR/Trojan/master/Trojan.sh && chmod +x Trojan.sh && ./Trojan.sh
+bash <(curl -s -L https://github.com/V2RaySSR/Trojan/raw/master/Trojan.sh)
