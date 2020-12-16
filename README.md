@@ -23,6 +23,3 @@ source <(curl -sL https://git.io/trojan-install)
 #卸载
 source <(curl -sL https://git.io/trojan-install) --remove
 
-
-
-3.bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
